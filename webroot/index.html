@@ -3,61 +3,92 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Game Landing</title>
-    <link rel="stylesheet" href="./css/index.css">
+    <title>Document</title>
 </head>
 <body>
     <header>
-            <input type="checkbox" id="menu_checkbox">
-              <label for="menu_checkbox" class="icon icon_menu">
-                <span class="a11y">Open the menu</span>
-              </label>
         <h1>
-        
-            <img src="./img/logo.png" alt="logo">
+            <img src="./img/logo-1.png" alt="">
         </h1>
         <nav>
-            <ul>
-                <li>Main</li>
-                <li>About</li>
-                <li>Game features</li>
-                <li>System requirements</li>
-                <li>Quotes</li>
+            <ul class="menu">
+                <li><a href="/main">Main</a></li>
+                <li><a href="/about">About</a></li>
+                <li><a href="/game-features">Game features</a></li>
+                <li><a href="/system">System requirements</a></li>
+                <li><a href="/quotes">Quotes</a></li>
             </ul>
         </nav>
-        <div>
+        <div class="languages">
             <select name="language" id="language">
-                <option value="english">Eng</option>
-                <option value="russia">Rus</option>
-                <option value="france">Fra</option>
-                <option value="Deu">Deu</option>
+                <option value="/english">Eng</option>
+                <option value="/russia">Rus</option>
+                <option value="/france">Fra</option>
+                <option value="/deu">Deu</option>
             </select>
         </div>
     </header>
     <main>
-        <header>
-            <h2>
-                Survive at all costs
-            </h2>
-            <p class="category">
-                Experience new social battle Royal Game
-            </p>
-            <div>
-                <ul>
-                    <li><a href="/buying">Buy now on Steam</a></li>
-                    <li><a href="/cost">$14.99</a></li>
-                </ul>
-            </div>
-            <div class="select-story">
-                <select name="story" id="story">
-                    <option value="story">The story</option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                    <option value=""></option>
-                </select>
-            </div>
-        </header>
+        <section class="experience">
+            <article>
+                <header>
+                    <h2>
+                        Survive at all cost
+                    </h2>
+                    <p class="category">
+                        Experience new social battle royal game
+                    </p>
+                </header>
+                <div class="buying">
+                    <span><a href="/marketing">Buy now on steam</a></span>
+                    <span><a href="/cost">$14.99</a></span>
+                </div>
+            </article>
+        </section>
+        <section class="social_battle">
+            <article>
+                <header>
+                    <h2>
+                        Social battle royal game
+                    </h2>
+                    <p class="category">
+                        what is sos?
+                    </p>
+                </header>
+                <p class="deacription">
+                    Each round, you and 15 other contestants compete to
+                    escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+                    solo or form friendships with others to escape? 
+
+                    Making the right decisions could be the
+                    difference between life and death.
+                </p>
+                <figure>
+                    <img src="" alt="">
+                    <img src="" alt="">
+                    <img src="" alt="">
+                </figure>
+            </article>
+        </section>
+        <section class="features">
+            <article>
+                <header>
+                    <h2>
+                        Features
+                    </h2>
+                    <p class="category">
+                        What's so special
+                    </p>
+                </header>
+                <div class="instruction">
+                    <ul>
+                        <li>Survive at all costs</li>
+                        <li>Create allies and enemies</li>
+                        <li>Impress the audience</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
     </main>
 </body>
 </html>
