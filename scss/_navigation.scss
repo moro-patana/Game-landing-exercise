@@ -1,0 +1,7 @@
+@import "variables";
+
+.menu li a {
+    text-transform: uppercase;
+    font-size: 12px;
+    color: $text-color;
+}
