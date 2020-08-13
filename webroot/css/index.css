@@ -49,6 +49,13 @@ a {
   letter-spacing: 2px;
   text-transform: uppercase; }
 
+.description {
+  font-family: "Open Sans";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 2px; }
+
 body > header {
   display: grid;
   grid-template-columns: repeat(3, 1fr); }
@@ -63,7 +70,8 @@ h1 > img {
 
 .experience {
   background-image: url("../img/bg-image1.jpg");
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .buying {
   background-color: orange;
