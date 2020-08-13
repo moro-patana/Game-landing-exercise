@@ -1,4 +1,7 @@
-$text-color: #ffff;
-$body-margin: auto;
-$heading-font-weight: 700;
-$font-style-normal: 400;
+
+$normal-size: 400;
+$bold-size: 700;
+$normal-style: normal;
+$italic-style: italic;
+$font-path: "../fonts/";
+$font-fallbacks: Arial, Helvetica, sans-serif;
