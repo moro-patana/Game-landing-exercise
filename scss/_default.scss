@@ -32,3 +32,11 @@ a {
     letter-spacing: 2px;
     text-transform: $text-transform;
 }
+.description {
+    font-family: $open-sans-font;
+    font-weight: $normal-size;
+    font-size: $description-size;
+    line-height: $description-height;
+    letter-spacing: 2px;
+
+}
