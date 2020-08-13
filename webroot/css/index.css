@@ -16,8 +16,38 @@
   font-weight: 400;
   src: local("Bebas-Neue-Regular"), local("Bebas-Neue-Regular"), url("../fonts/bebas_neue_regular.woff2") format("woff2"), url("../fonts/bebas_neue_regular.woff") format("woff"); }
 
-img {
-  width: 100%; }
+body {
+  background-color: black;
+  margin: auto; }
+
+h2 {
+  font-family: "Bebas Neue";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 33px;
+  line-height: 33px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
+
+h2,
+p,
+.category,
+span {
+  color: #ffff; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+.category {
+  font-family: "Bebas Neue";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 18px;
+  letter-spacing: 2px;
+  text-transform: uppercase; }
 
 body > header {
   display: grid;
@@ -26,3 +56,23 @@ body > header {
 body > header nav {
   order: 3;
   display: inline; }
+
+h1 > img {
+  width: 60px;
+  height: 60px; }
+
+.experience {
+  background-image: url("../img/bg-image1.jpg");
+  background-repeat: no-repeat; }
+
+.buying {
+  background-color: orange;
+  width: 200px;
+  height: 50px;
+  border-radius: 5;
+  border-radius: 5px; }
+
+.menu li a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #ffff; }
