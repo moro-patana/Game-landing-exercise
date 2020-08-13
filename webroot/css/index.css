@@ -20,6 +20,9 @@ img {
   width: 100%; }
 
 body > header {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; }
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); }
+
+body > header nav {
+  order: 3;
+  display: inline; }
