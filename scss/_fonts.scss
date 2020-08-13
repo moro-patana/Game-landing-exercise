@@ -1,0 +1,30 @@
+@import "variables";
+@font-face {
+    font-style: $normal-style;
+    font-family: "Open Sans";
+    font-weight: $bold-size;
+    src: local("open-sans-Bold"),
+         local("open-sans-Bold"),
+         url($font-path + "open_sans_bold.woff2") format('woff2'),
+         url($font-path + "open_sans_bold.woff") format('woff');
+  }
+  
+  @font-face {
+    font-style: $normal-style;
+    font-family: "Open Sans";
+    font-weight: $normal-size;
+    src: local("Open-Sans-Regular"),
+         local("Open-Sans-Regular"),
+         url('../fonts/open_sans_regular.woff2') format('woff2'),
+         url('../fonts/open_sans_regular.woff') format('woff');
+  }
+
+  @font-face {
+     font-style: $normal-style;
+     font-family: "Bebas Neue";
+     font-weight: $normal-size;
+     src: local("Bebas-Neue-Regular"),
+          local("Bebas-Neue-Regular"),
+          url('../fonts/bebas_neue_regular.woff2') format('woff2'),
+          url('../fonts/bebas_neue_regular.woff') format('woff');
+   }
