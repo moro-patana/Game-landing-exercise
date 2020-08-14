@@ -1,37 +1,42 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
+
 <body>
     <header>
-        <h1>
-            <img src="./img/page-logo.png" alt="logo">
-        </h1>
-        <nav>
-            <ul class="menu">
-                <li><a href="/main">Main</a></li>
-                <li><a href="/about">About</a></li>
-                <li><a href="/game-features">Game features</a></li>
-                <li><a href="/system">System requirements</a></li>
-                <li><a href="/quotes">Quotes</a></li>
-            </ul>
-        </nav>
-        <div class="languages">
-            <select name="language" id="language">
-                <option value="/english">Eng</option>
-                <option value="/russia">Rus</option>
-                <option value="/france">Fra</option>
-                <option value="/deu">Deu</option>
-            </select>
+        <div class="container">
+            <h1>
+                <img src="./img/page-logo.png" alt="logo">
+            </h1>
+            <nav>
+                <ul class="menu">
+                    <li><a href="/main">Main</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/game-features">Game features</a></li>
+                    <li><a href="/system">System requirements</a></li>
+                    <li><a href="/quotes">Quotes</a></li>
+                </ul>
+            </nav>
+            <div class="languages">
+                <select name="language" id="language">
+                    <option value="/english">Eng</option>
+                    <option value="/russia">Rus</option>
+                    <option value="/france">Fra</option>
+                    <option value="/deu">Deu</option>
+                </select>
+            </div>
+
         </div>
     </header>
     <main>
-        <section class="experience">
-            <article>
+        <article class="experience">
+            <div class="container">
                 <header>
                     <h2>
                         Survive at all cost
@@ -39,40 +44,55 @@
                     <p class="category">
                         Experience new social battle royal game
                     </p>
+                    <div class="buying">
+                        <img src="./img/buying_button.png" alt="">
+                    </div>
+                    <div class="post">
+                         <p>
+                            <input type="radio" id="test2" name="radio-group">
+                            <label for="post1">Older post</label>
+                          </p>  
+                          <p>
+                            <input type="radio" id="test2" name="radio-group">
+                            <label for="post1">Current post</label>
+                          </p>                        
+                          <p>
+                            <input type="radio" id="test2" name="radio-group">
+                            <label for="post1">Last post</label>
+                          </p>                                              
+                    </div>
                 </header>
-                <div class="buying">
-                    <span><a href="/marketing">Buy now on steam</a></span>
-                    <span><a href="/cost">$14.99</a></span>
-                </div>
-            </article>
+            </div>
+        </article>
         </section>
-        <section class="social_battle">
-            <article>
-                <header>
-                    <h2>
-                        Social battle royal game
-                    </h2>
-                    <p class="category">
-                        what is sos?
-                    </p>
-                </header>
-                <p class="description">
-                    Each round, you and 15 other contestants compete to
-                    escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
-                    solo or form friendships with others to escape? 
-
-                    Making the right decisions could be the
-                    difference between life and death.
+        <article class="social_battle">
+            <div class="container">
+            </div>
+            <header>
+                <h2>
+                    Social battle royal game
+                </h2>
+                <p class="category">
+                    what is sos?
                 </p>
-                <figure>
-                    <img src="" alt="">
-                    <img src="" alt="">
-                    <img src="" alt="">
-                </figure>
-            </article>
-        </section>
-        <section class="features">
-            <article>
+            </header>
+            <p class="description">
+                Each round, you and 15 other contestants compete to
+                escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+                solo or form friendships with others to escape?
+
+                Making the right decisions could be the
+                difference between life and death.
+            </p>
+            <figure>
+                <img src="" alt="">
+                <img src="" alt="">
+                <img src="" alt="">
+            </figure>
+        </article>
+
+        <article class="features">
+            <div class="container">
                 <header>
                     <h2>
                         Features
@@ -88,113 +108,109 @@
                         <li class="instruction list_item">Impress the audience</li>
                     </ul>
                 </div>
-            </article>
-        </section>
-    <section class="system_requirements">
-        <article>
-            <header>
-                <h2>
-                    System requirements
-                </h2>
-                <p class="category">
-                    Can my computer run this game?
-                </p>    
-            </header>
-            <div class="system_list">
-               <ul class="system_list_items">
-                   <li class="system_list_item">Os</li>
-                   <li class="system_list_item">Processor</li>
-                   <li class="system_list_item">Memory</li>
-                   <li class="system_list_item">Storage</li>
-                   <li class="system_list_item">Graphics</li>
-               </ul>
             </div>
         </article>
-    </section>
-    <section class="quotations">
-        <article>
-            <header>
-                <h2>
-                    Press Quotes
-                </h2>
-                <p class="category">
-                    What people think?
+        <article class="system_requirements">
+            <div class="container">
+                <header>
+                    <h2>
+                        System requirements
+                    </h2>
+                    <p class="category">
+                        Can my computer run this game?
+                    </p>
+                </header>
+                <div class="system_list">
+                    <ul class="system_list_items">
+                        <li class="system_list_item">Os</li>
+                        <li class="system_list_item">Processor</li>
+                        <li class="system_list_item">Memory</li>
+                        <li class="system_list_item">Storage</li>
+                        <li class="system_list_item">Graphics</li>
+                    </ul>
+                </div>
+            </div>
+        </article>
+        <article class="quotations">
+            <div class="container">
+                <header>
+                    <h2>
+                        Press Quotes
+                    </h2>
+                    <p class="category">
+                        What people think?
+                    </p>
+                </header>
+                <p class="description">
+                    Our goal is to create a product and service that you’re satisfied with and
+                    use it every day. This is why we’re constantly working on our services
+                    to make it better every day and really listen to what our users has to say.
                 </p>
-            </header>
-            <p class="description">
-                Our goal is to create a product and service that you’re satisfied with and 
-                use it every day. This is why we’re constantly working on our services 
-                to make it better every day and really listen to what our users has to say.
-            </p>
-            <button class="testemonial">
-                Read more testemonials
-            </button>
-            <div class="ttestemonials_page">
-                <ul class="testemonial_lists">
-                    <li class="testemonial_list_items">
-                        <a class="profile" href="/profile"><img src="" alt=""></a>
-                        <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
-                        <span class="testemony_name">Evan Lathi</span>
-                        <span class="profession">Pc Gamer</span>
-                        <p>
-                            “One of my gaming highlights of the year.”
-                        </p>
-                        <span class="date">October 18, 2018</span>
-                    </li>
-                    <li class="testemonial_list_items">
-                        <a class="profile" href="/profile"><img src="" alt=""></a>
-                        <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
-                        <span class="testemony_name">Jada Griffin</span>
-                        <span class="profession">Nerdreactor</span>
-                        <p>
-                            “The next big thing in the world of streaming and survival games.”
-                        </p>
-                        <span class="date">December 21, 2018</span>
+                <button class="testemonial">
+                    Read more testemonials
+                </button>
+                <div class="testemonials_page">
+                    <ul class="testemonial_lists">
+                        <li class="testemonial_list_items">
+                            <a class="profile" href="/profile"><img src="" alt=""></a>
+                            <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
+                            <span class="testemony_name">Evan Lathi</span>
+                            <span class="profession">Pc Gamer</span>
+                            <p>
+                                “One of my gaming highlights of the year.”
+                            </p>
+                            <span class="date">October 18, 2018</span>
+                        </li>
+                        <li class="testemonial_list_items">
+                            <a class="profile" href="/profile"><img src="" alt=""></a>
+                            <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
+                            <span class="testemony_name">Jada Griffin</span>
+                            <span class="profession">Nerdreactor</span>
+                            <p>
+                                “The next big thing in the world of streaming and survival games.”
+                            </p>
+                            <span class="date">December 21, 2018</span>
 
-                    </li>
-                    <li class="testemonial_list_items">
-                        <a class="profile" href="/profile"><img src="" alt=""></a>
-                        <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
-                        <span class="testemony_name">Aaron Williams</span>
-                        <span class="profession">Uproxx</span>
-                        <p>
-                            “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
-                        </p>
-                        <span class="date">December 24, 2018</span>
-                    </li>
-                </ul>
+                        </li>
+                        <li class="testemonial_list_items">
+                            <a class="profile" href="/profile"><img src="" alt=""></a>
+                            <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
+                            <span class="testemony_name">Aaron Williams</span>
+                            <span class="profession">Uproxx</span>
+                            <p>
+                                “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                            </p>
+                            <span class="date">December 24, 2018</span>
+                        </li>
+                    </ul>
+                </div>
             </div>
         </article>
-    </section>
-    <section class="newsletter_subscribe">
-        <article>
-            <header>
-                <h2>
-                    Newsletter subscribe
-                </h2>
-                <p class="category">
-                    Want to stay in touch?
-                </p>
-            </header>
-            <p class="description">
-                In order to start receiving our news, all you have to do is enter your email address. Everything else will be taken care of by us. We will send you emails containing 
-                information about game. We don’t spam.
-            </p>
-        </article>
-        <article>
-            <form action="" class="form_input">
-                <input
-                class="email_adress"
-                type="text"
-                id="email"
-                name="email"
-                placeholder="Your email adress"
-                required
-            />
-                <button class="subscribe">Subscribe now</button>
-            </form>
-        </article>
-    </section>
+        <article class="newsletter_subscribe">
+            <div class="container">
+                <div class="subscribing">
+                    <header>
+                        <h2>
+                            Newsletter subscribe
+                        </h2>
+                        <p class="category">
+                            Want to stay in touch?
+                        </p>
+                    </header>
+                    <p class="description">
+                        In order to start receiving our news, all you have to do is enter your email address. Everything
+                        else will be taken care of by us. We will send you emails containing
+                        information about game. We don’t spam.
+                    </p>
+                </div>
+                <div class="form_input">
+                    <form action="" class="form_input">
+                        <input class="email_adress" type="text" id="email" name="email" placeholder="Your email adress"
+                            required />
+                        <button class="subscribe">Subscribe now</button>
+                    </form>
+                </div>
+            </div>
     </main>
     <footer>
         <article>
@@ -224,13 +240,14 @@
         <span>
             © 2018 Outpost Games, Inc. All Rights Reserved
         </span>
-    <div class="strategy">
-        <ul class="strategy_lists">
-            <li class="strategy_list_item">Privacy policy</li>
-            <li class="strategy_list_item">Terms of services</li>
-            <li class="strategy_list_item">Code of conduct</li>
-        </ul>
-    </div>
-</footer>
+        <div class="strategy">
+            <ul class="strategy_lists">
+                <li class="strategy_list_item">Privacy policy</li>
+                <li class="strategy_list_item">Terms of services</li>
+                <li class="strategy_list_item">Code of conduct</li>
+            </ul>
+        </div>
+    </footer>
 </body>
+
 </html>
