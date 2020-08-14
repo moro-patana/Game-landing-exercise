@@ -1,0 +1,19 @@
+@import "variables";
+
+.post {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding-top: 5rem;
+}
+
+
+.post label {
+    display: none;
+}
+.post::after {
+    content: "→";
+    color: white;
+    width: 60px;
+    padding-top: 1rem;
+}
