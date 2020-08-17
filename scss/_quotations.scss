@@ -1,0 +1,41 @@
+@import "variables";
+
+.quotations {
+    padding: 1rem;
+}
+.testemonials_page {
+    display: flex;
+    flex-direction: column;
+}
+.testemonial_list {
+    background-color: rgba(255, 255, 255, 0.08);
+    border-radius: 10px;
+    margin-block-end: 1rem;
+    padding: 1rem;
+    width: 300px;
+    height: 150px;
+}
+.testemonial_list img {
+    width: 40px;
+    border-radius: 50px;
+}
+.testemonial_homepage {
+    display: flex;
+}
+.testemony_name {
+    font-family: $bebas-font;
+    font-size: 21px;
+    line-height: 21px;
+    color: #FFB548;
+}
+.profession {
+    font-family: $open-sans-font;
+    font-style: $normal-style;
+    font-weight: $normal-size;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    opacity: 0.5;
+    padding-inline-start: 3rem;
+
+}
