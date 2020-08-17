@@ -11,6 +11,10 @@
 <body>
     <header>
         <div class="container">
+            <input type="checkbox" id="menu_checkbox">
+            <label for="menu_checkbox" class="icon icon_menu">
+                <span class="a11y">Open the menu</span>
+            </label>
             <h1>
                 <img src="./img/page-logo.png" alt="logo">
             </h1>
@@ -48,18 +52,18 @@
                         <img src="./img/buying_button.png" alt="">
                     </div>
                     <div class="post">
-                         <p>
+                        <p>
                             <input type="radio" id="test2" name="radio-group">
                             <label for="post1">Older post</label>
-                          </p>  
-                          <p>
+                        </p>
+                        <p>
                             <input type="radio" id="test2" name="radio-group">
                             <label for="post1">Current post</label>
-                          </p>                        
-                          <p>
+                        </p>
+                        <p>
                             <input type="radio" id="test2" name="radio-group">
                             <label for="post1">Last post</label>
-                          </p>                                              
+                        </p>
                     </div>
                 </header>
             </div>
@@ -67,28 +71,28 @@
         </section>
         <article class="social_battle">
             <div class="container">
-            </div>
-            <header>
-                <h2>
-                    Social battle royal game
-                </h2>
-                <p class="category">
-                    what is sos?
-                </p>
-            </header>
-            <p class="description">
-                Each round, you and 15 other contestants compete to
-                escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
-                solo or form friendships with others to escape?
+                <header>
+                    <h2>
+                        Social battle royal game
+                    </h2>
+                    <p class="category">
+                        what is sos?
+                    </p>
+                </header>
+                <p class="description">
+                    Each round, you and 15 other contestants compete to
+                    escape a deadly island filled with monsters. The trick is: three people can survive. Will you run
+                    solo or form friendships with others to escape?
 
-                Making the right decisions could be the
-                difference between life and death.
-            </p>
-            <figure>
-                <img src="" alt="">
-                <img src="" alt="">
-                <img src="" alt="">
-            </figure>
+                    Making the right decisions could be the
+                    difference between life and death.
+                </p>
+                <figure>
+                    <img src="./img/screenshot 1.jpg" alt="">
+                    <img src="./img/screenshot 2.jpg" alt="">
+                    <img src="./img/screenshot 3.jpg" alt="">
+                </figure>
+            </div>
         </article>
 
         <article class="features">
@@ -150,40 +154,50 @@
                     Read more testemonials
                 </button>
                 <div class="testemonials_page">
-                    <ul class="testemonial_lists">
-                        <li class="testemonial_list_items">
-                            <a class="profile" href="/profile"><img src="" alt=""></a>
-                            <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
-                            <span class="testemony_name">Evan Lathi</span>
+                    <div class="testemonial_list">
+                        <div class="testemonial_homepage">
+                            <a class="profile" href="/profile"><img src="./img/evan.png" alt=""></a>
+                            <h3 class="testemony_name">Evan Lathi</h3>
                             <span class="profession">Pc Gamer</span>
-                            <p>
-                                “One of my gaming highlights of the year.”
-                            </p>
-                            <span class="date">October 18, 2018</span>
-                        </li>
-                        <li class="testemonial_list_items">
-                            <a class="profile" href="/profile"><img src="" alt=""></a>
-                            <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
+                            <a class="social_media" href="/media"><img src="./img/twitter-dark.png" alt=""
+                                    class="social_media_icon"></a>
+                        </div>
+                        <p>
+                            “One of my gaming highlights of the year.”
+                        </p>
+                        <span class="date">October 18, 2018</span>
+                    </div>
+                    <div class="testemonial_list">
+                        <div class="testemonial_homepage">
+                            <a class="profile" href="/profile"><img src="./img/jada.png" alt=""></a>
                             <span class="testemony_name">Jada Griffin</span>
+                            <br>
                             <span class="profession">Nerdreactor</span>
-                            <p>
-                                “The next big thing in the world of streaming and survival games.”
-                            </p>
-                            <span class="date">December 21, 2018</span>
+                            <a class="social_media" href="/media"><img src="./img/twitter-dark.png" alt=""
+                                    class="social_media_icon"></a>
+                        </div>
+                        <p>
+                            “The next big thing in the world of streaming and survival games.”
+                        </p>
+                        <span class="date">December 21, 2018</span>
 
-                        </li>
-                        <li class="testemonial_list_items">
-                            <a class="profile" href="/profile"><img src="" alt=""></a>
-                            <a class="social_media" href="/media"><img src="" alt="" class="social_media_icon"></a>
+                    </div>
+                    <div class="testemonial_list">
+                        <div class="testemonial_homepage">
+                            <a class="profile" href="/profile"><img src="./img/williams.png" alt=""></a>
                             <span class="testemony_name">Aaron Williams</span>
+                            <br>
                             <span class="profession">Uproxx</span>
-                            <p>
-                                “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
-                            </p>
-                            <span class="date">December 24, 2018</span>
-                        </li>
-                    </ul>
+                            <a class="social_media" href="/media"><img src="./img/twitter-dark.png" alt=""
+                            class="social_media_icon"></a>
+                        </div>
+                        <p>
+                            “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
+                        </p>
+                        <span class="date">December 24, 2018</span>
+                    </div>
                 </div>
+            </div>
             </div>
         </article>
         <article class="newsletter_subscribe">
@@ -221,7 +235,7 @@
             </header>
             <nav>
                 <ul class="menu">
-                    <li><a href="/main">Main</a></li>
+                    div><a href="/main">Main</a></li>
                     <li><a href="/about">About</a></li>
                     <li><a href="/game-features">Game features</a></li>
                     <li><a href="/system">System requirements</a></li>
