@@ -57,9 +57,9 @@ a {
   line-height: 16px;
   letter-spacing: 2px; }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto; }
+.heading {
+  display: flex;
+  flex-direction: column-reverse; }
 
 body > header .container {
   display: flex;
@@ -86,10 +86,100 @@ h1 > img {
   padding-block-end: 5rem;
   text-align: center; }
 
+.social_battle {
+  background-image: url("../img/bg-image2.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-block-start: 5rem;
+  padding-block-end: 5rem; }
+
+.social_battle header {
+  display: flex;
+  flex-direction: column-reverse;
+  border-bottom: 2px solid white;
+  padding-inline-start: 1rem; }
+
+.social_battle .description {
+  padding-block-start: 1rem;
+  padding-inline-start: 3rem;
+  padding-inline-end: 1rem; }
+
+.social_battle figure {
+  position: absolute; }
+
+.social_battle img {
+  width: 300px;
+  position: absolute;
+  z-index: 1; }
+
 .menu li a {
   text-transform: uppercase;
   font-size: 12px;
   color: #ffff; }
+
+body > header nav ul {
+  padding: 1rem;
+  background-color: #f8f8f8;
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 250px;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+  transform: translateX(-110%);
+  transition: transform 0.3s; }
+
+body > [type="checkbox"]:checked ~ nav {
+  transform: translateX(0); }
+
+body > [type="checkbox"]:checked ~ header label {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.25); }
+
+body > [type="checkbox"]:checked ~ main {
+  z-index: 1; }
+
+body > header > nav {
+  display: none;
+  position: absolute;
+  top: 1rem;
+  left: 1rem;
+  width: 1rem;
+  height: 1rem; }
+
+.container > label {
+  width: 1rem;
+  height: 1rem;
+  display: block;
+  background-image: url("../img/icon_menu.svg");
+  background-size: 1rem;
+  background-repeat: no-repeat; }
+
+body > nav > ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column; }
+
+body > header > nav ul a {
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #343638;
+  opacity: 0.5;
+  font-weight: 700;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  transition: opacity 0.3s;
+  display: block;
+  padding: 1rem 1rem 1rem 4rem;
+  vertical-align: middle; }
 
 .post {
   display: flex;
@@ -105,3 +195,71 @@ h1 > img {
   color: white;
   width: 60px;
   padding-top: 1rem; }
+
+.quotations {
+  padding: 1rem; }
+
+.testemonial {
+  background-color: orange;
+  width: 200px;
+  height: 44px;
+  border-radius: 2px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 19px;
+  text-align: center;
+  margin-block-start: 1.5rem;
+  margin-block-end: 1.5rem;
+  margin-inline-start: 2rem;
+  color: #1A1917; }
+
+.testemony_lists {
+  display: flex;
+  flex-direction: column; }
+
+.testemony {
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 10px;
+  margin-block-end: 1rem;
+  padding: 1rem;
+  max-width: 400px;
+  height: 200px; }
+
+.testemony img {
+  width: 40px;
+  border-radius: 50px; }
+
+.testemony header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between; }
+
+.testemony_name {
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  line-height: 21px;
+  color: #FFB548;
+  display: flex;
+  flex-direction: column; }
+
+.profession,
+.date {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  opacity: 0.5;
+  padding-inline-start: 1rem; }
+
+.quote {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 22px;
+  color: #FFFFFF;
+  padding-inline-start: 1rem; }
