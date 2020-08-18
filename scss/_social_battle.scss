@@ -5,7 +5,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     padding-block-start: 5rem;
-    padding-block-end: 5rem;
+    padding-block-end: 400px;
 }
 .social_battle header {
     display: flex;
@@ -22,7 +22,25 @@
     position: absolute;
 }
 .social_battle img {
-    width: 300px;
+    width: 225px;
+    height: 275px;
     position: absolute;
+}
+.image_list {
+    position: absolute;
+}
+.screenshot_first img {
+    padding-block-start: 51px;
+    padding-inline-start: 37px;
+    z-index: 3;
+}
+.screenshot_second img {
+    padding-block-start: 63px;
+    padding-inline-start: 49px;
+    z-index: 2;
+}
+.screenshot_third img {
+    padding-block-start: 75px;
+    padding-inline-start: 61px;
     z-index: 1;
 }
