@@ -3,32 +3,53 @@
 .quotations {
     padding: 1rem;
 }
-.testemonials_page {
+.testemonial {
+    background-color: orange;
+    width: 200px;
+    height: 44px;
+    border-radius: 2px;
+    font-family: $open-sans-font;
+    font-style: $normal-style;
+    font-weight: $bold-size;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    margin-block-start: 1.5rem;
+    margin-block-end: 1.5rem;
+    margin-inline-start: 2rem;
+    color: #1A1917;
+}
+.testemony_lists {
     display: flex;
     flex-direction: column;
 }
-.testemonial_list {
+.testemony {
     background-color: rgba(255, 255, 255, 0.08);
     border-radius: 10px;
     margin-block-end: 1rem;
     padding: 1rem;
-    width: 300px;
-    height: 150px;
+    max-width: 400px;
+    height: 200px;
 }
-.testemonial_list img {
+.testemony img {
     width: 40px;
     border-radius: 50px;
 }
-.testemonial_homepage {
+.testemony header {
     display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 .testemony_name {
     font-family: $bebas-font;
     font-size: 21px;
     line-height: 21px;
     color: #FFB548;
+    display: flex;
+    flex-direction: column;
 }
-.profession {
+.profession,
+.date {
     font-family: $open-sans-font;
     font-style: $normal-style;
     font-weight: $normal-size;
@@ -36,6 +57,15 @@
     line-height: 22px;
     color: #FFFFFF;
     opacity: 0.5;
-    padding-inline-start: 3rem;
+    padding-inline-start: 1rem;
 
+}
+.quote {
+    font-family: $open-sans-font;
+    font-style: $normal-style;
+    font-weight: $normal-size;
+    font-size: 14px;
+    line-height: 22px;
+    color: #FFFFFF;
+    padding-inline-start: 1rem;
 }
