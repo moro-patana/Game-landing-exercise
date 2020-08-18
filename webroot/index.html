@@ -1,77 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Game Page</title>
     <link rel="stylesheet" href="./css/index.css">
 </head>
-
 <body>
     <header>
-        <div class="container">
-            <input type="checkbox" id="menu_checkbox">
-            <label for="menu_checkbox" class="icon icon_menu">
-                <span class="a11y">Open the menu</span>
-            </label>
-            <h1>
-                <img src="./img/page-logo.png" alt="logo">
-            </h1>
-            <nav>
-                <ul class="menu">
-                    <li><a href="/main">Main</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/game-features">Game features</a></li>
-                    <li><a href="/system">System requirements</a></li>
-                    <li><a href="/quotes">Quotes</a></li>
-                </ul>
-            </nav>
-            <div class="languages">
-                <select name="language" id="language">
-                    <option value="/english">Eng</option>
-                    <option value="/russia">Rus</option>
-                    <option value="/france">Fra</option>
-                    <option value="/deu">Deu</option>
-                </select>
-            </div>
-
+        <h1>
+            <img src="./img/logo-1.png" alt="Logo">
+        </h1>
+        <div class="languages">
+            <select name="language" id="language">
+                <option value="/english">Eng</option>
+                <option value="/russia">Rus</option>
+                <option value="/france">Fra</option>
+                <option value="/deu">Deu</option>
+            </select>
         </div>
+        <input type="checkbox" id="menu_checkbox">
+        <label for="menu_checkbox" class="icon icon_menu">
+            <span class="a11y">Open the menu</span>
+        </label>
     </header>
     <main>
-        <article class="experience">
-            <div class="container">
-                <header>
-                    <h2>
-                        Survive at all cost
-                    </h2>
-                    <p class="category">
-                        Experience new social battle royal game
-                    </p>
-                    <div class="buying">
-                        <img src="./img/buying_button.png" alt="">
-                    </div>
-                    <div class="post">
-                        <p>
-                            <input type="radio" id="test2" name="radio-group">
-                            <label for="post1">Older post</label>
-                        </p>
-                        <p>
-                            <input type="radio" id="test2" name="radio-group">
-                            <label for="post1">Current post</label>
-                        </p>
-                        <p>
-                            <input type="radio" id="test2" name="radio-group">
-                            <label for="post1">Last post</label>
-                        </p>
-                    </div>
-                </header>
+        <header class="masthead">
+            <h2>
+                Survive at all cost
+            </h2>
+            <p class="category">
+                Experience new social battle royal game
+            </p>
+            <a href="/buying"><img src="./img/buying_button.png" alt=""></a>
+            <div class="post">
+                <p>
+                    <input type="radio" id="test2" name="radio-group">
+                    <label for="post1">Older post</label>
+                </p>
+                <p>
+                    <input type="radio" id="test2" name="radio-group">
+                    <label for="post1">Current post</label>
+                </p>
+                <p>
+                    <input type="radio" id="test2" name="radio-group">
+                    <label for="post1">Last post</label>
+                </p>
             </div>
-        </article>
-        </section>
-        <article class="social_battle">
-            <div class="container">
-                <header>
+        </header>
+        <section class="social_battle">
+            <article>
+                <header class="heading">
                     <h2>
                         Social battle royal game
                     </h2>
@@ -87,17 +66,16 @@
                     Making the right decisions could be the
                     difference between life and death.
                 </p>
-                <figure>
+                <div class="image_doc">
                     <img src="./img/screenshot 1.jpg" alt="">
                     <img src="./img/screenshot 2.jpg" alt="">
                     <img src="./img/screenshot 3.jpg" alt="">
-                </figure>
-            </div>
-        </article>
-
-        <article class="features">
-            <div class="container">
-                <header>
+                </div>
+            </article>
+        </section>
+        <section class="features">
+            <article>
+                <header class="heading">
                     <h2>
                         Features
                     </h2>
@@ -106,17 +84,37 @@
                     </p>
                 </header>
                 <div class="instruction">
-                    <ul>
-                        <li class="instruction list_item">Survive at all costs</li>
-                        <li class="instruction list_item">Create allies and enemies</li>
-                        <li class="instruction list_item">Impress the audience</li>
-                    </ul>
+                    <div class="instruction_flows">
+                        <input type="radio" id="test2" name="radio-group">
+                        <label for="post1">Survive at all costs</label>
+                        <p class="detail">
+                            You have 30 minutes to find a relic, signal for extraction, and grab
+                            one of three spots on the rescue chopper.
+                        </p>    
+                    </div>
+                    <div class="instruction_flows">
+                        <input type="radio" id="test2" name="radio-group">
+                        <label for="post1">Create allies and enemies</label>
+                        <p class="detail">
+                            You have 30 minutes to find a relic, signal for extraction, and grab
+                            one of three spots on the rescue chopper.
+                        </p>    
+                    </div>
+                    <div class="instruction_flows">
+                        <input type="radio" id="test2" name="radio-group">
+                        <label for="post1">Impress the audience</label>
+                        <p class="detail">
+                            You have 30 minutes to find a relic, signal for extraction, and grab
+                            one of three spots on the rescue chopper.
+                        </p>    
+                    </div>
+
                 </div>
-            </div>
-        </article>
-        <article class="system_requirements">
-            <div class="container">
-                <header>
+            </article>
+        </section>
+        <section class="system_requirements">
+            <article>
+                <header class="heading">
                     <h2>
                         System requirements
                     </h2>
@@ -133,11 +131,11 @@
                         <li class="system_list_item">Graphics</li>
                     </ul>
                 </div>
-            </div>
-        </article>
-        <article class="quotations">
-            <div class="container">
-                <header>
+            </article>
+        </section>
+        <section class="quotations">
+            <article>
+                <header class="heading">
                     <h2>
                         Press Quotes
                     </h2>
@@ -153,115 +151,112 @@
                 <button class="testemonial">
                     Read more testemonials
                 </button>
-                <div class="testemonials_page">
-                    <div class="testemonial_list">
-                        <div class="testemonial_homepage">
-                            <a class="profile" href="/profile"><img src="./img/evan.png" alt=""></a>
-                            <h3 class="testemony_name">Evan Lathi</h3>
-                            <span class="profession">Pc Gamer</span>
-                            <a class="social_media" href="/media"><img src="./img/twitter-dark.png" alt=""
-                                    class="social_media_icon"></a>
-                        </div>
-                        <p>
-                            “One of my gaming highlights of the year.”
-                        </p>
-                        <span class="date">October 18, 2018</span>
-                    </div>
-                    <div class="testemonial_list">
-                        <div class="testemonial_homepage">
-                            <a class="profile" href="/profile"><img src="./img/jada.png" alt=""></a>
-                            <span class="testemony_name">Jada Griffin</span>
-                            <br>
-                            <span class="profession">Nerdreactor</span>
-                            <a class="social_media" href="/media"><img src="./img/twitter-dark.png" alt=""
-                                    class="social_media_icon"></a>
-                        </div>
-                        <p>
-                            “The next big thing in the world of streaming and survival games.”
-                        </p>
-                        <span class="date">December 21, 2018</span>
-
-                    </div>
-                    <div class="testemonial_list">
-                        <div class="testemonial_homepage">
-                            <a class="profile" href="/profile"><img src="./img/williams.png" alt=""></a>
-                            <span class="testemony_name">Aaron Williams</span>
-                            <br>
-                            <span class="profession">Uproxx</span>
-                            <a class="social_media" href="/media"><img src="./img/twitter-dark.png" alt=""
-                            class="social_media_icon"></a>
-                        </div>
-                        <p>
-                            “Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.”
-                        </p>
-                        <span class="date">December 24, 2018</span>
-                    </div>
-                </div>
-            </div>
-            </div>
-        </article>
-        <article class="newsletter_subscribe">
-            <div class="container">
-                <div class="subscribing">
+            </article>
+            <div class="testemony_lists">
+                <article class="testemony">
+                  <header>
+                      <a href="/profile">
+                        <img class="profile" src="./img/evan.png" alt="">
+                      </a>
+                      <h3 class="testemony_name">
+                          Evan lathi
+                          <span class="profession">PC Gamer</span>
+                      </h3>
+                      <a href="/media"><img src="./img/twitter-dark.png" alt="" class="media_page"></a>
+                  </header>
+                  <p class="quote">
+                      <q>One of my gaming highlights of the year.</q>
+                  </p>
+                  <span class="date">October 18, 2018</span>
+                </article>
+                <article class="testemony">
                     <header>
-                        <h2>
-                            Newsletter subscribe
-                        </h2>
-                        <p class="category">
-                            Want to stay in touch?
-                        </p>
+                        <a href="/profile">
+                          <img class="profile" src="./img/jada.png" alt="">
+                        </a>
+                        <h3 class="testemony_name">
+                            Jada Griffin
+                            <span class="profession">Nerdreactor</span>
+                        </h3>
+                        <a href="/media"><img src="./img/twitter-dark.png" alt="" class="media_page"></a>
                     </header>
-                    <p class="description">
-                        In order to start receiving our news, all you have to do is enter your email address. Everything
-                        else will be taken care of by us. We will send you emails containing
-                        information about game. We don’t spam.
+                    <p class="quote">
+                        <q>The next big thing in the world of streaming and survival games.</q>
                     </p>
-                </div>
-                <div class="form_input">
+                    <span class="date">December 21, 2018</span>
+                  </article>
+                  <article class="testemony">
+                    <header>
+                        <a href="/profile">
+                          <img class="profile" src="./img/williams.png" alt="">
+                        </a>
+                        <h3 class="testemony_name">
+                            Aaron Williams
+                            <span class="profession">Uproxx</span>
+                        </h3>
+                        <a href="/media"><img src="./img/twitter-dark.png" alt="" class="media_page"></a>
+                    </header>
+                    <p class="quote">
+                        <q>Snoop Dogg Playing The Wildly Entertaining ‘SOS’ Is Ridiculous.</q>
+                    </p>
+                    <span class="date">December 24, 2018</span>
+                  </article>
+       
+            </div>
+        </section>
+        <section class="newsletter_subscribe">
+            <article>
+                <header class="heading">
+                    <h2>
+                        Newsletter Subscribe
+                    </h2>
+                    <p class="category">
+                        Want to stay in touch?
+                    </p>
+                </header>
+                <p class="description">
+                    In order to start receiving our news, all you have to do is enter your email address. Everything
+                    else will be taken care of by us. We will send you emails containing
+                    information about game. We don’t spam.
+                </p>
+                <div class="form_group">
                     <form action="" class="form_input">
-                        <input class="email_adress" type="text" id="email" name="email" placeholder="Your email adress"
-                            required />
-                        <button class="subscribe">Subscribe now</button>
+                        <input type="text" class="email" placeholder="Your email address">
+                        <button>Subscribe</button>
                     </form>
                 </div>
-            </div>
+            </article>
+        </section>
     </main>
     <footer>
-        <article>
-            <header>
-                <h2>
-                    <img src="" alt="">
-                </h2>
-            </header>
-            <nav>
-                <ul class="menu">
-                    div><a href="/main">Main</a></li>
-                    <li><a href="/about">About</a></li>
-                    <li><a href="/game-features">Game features</a></li>
-                    <li><a href="/system">System requirements</a></li>
-                    <li><a href="/quotes">Quotes</a></li>
-                </ul>
-            </nav>
-            <div class="media_page">
-                <ul class="media_page_lists">
-                    <li class="media_list_item"><a href="" class="media_page_icon">Facebook</a></li>
-                    <li class="media_list_item"><a href="" class="media_page_icon">Twitter</a></li>
-                    <li class="media_list_item"><a href="" class="media_page_icon">Youtube</a></li>
-                    <li class="media_list_item"><a href="" class="media_page_icon">Messanger</a></li>
-                </ul>
-            </div>
-        </article>
-        <span>
+        <p class="page_logo">
+            <img src="./img/logo.png" alt="">
+        </p>
+        <nav class="homepage">
+            <ul>
+                <li><a class="a11y" href="/main">Main</a></li>
+                <li><a class="a11y" href="/about">About</a></li>
+                <li><a class="a11y" href="/game">Game features</a></li>
+                <li><a class="a11y" href="/system">System requirements</a></li>
+                <li><a class="a11y" href="/quote">Quotes</a></li>
+                <li class="media_list_item"><a href="/facebook"><img src="./img/facebook_icon.png" alt="" class="icon_media"></a></li>
+                <li class="media_list_item"><a href="/twitter"><img src="./img/twitter_icon.png" alt="" class="icon_media"></a></li>
+                <li class="media_list_item"><a href="/youtube"><img src="./img/vector_icon.png" alt="" class="icon_media"></a></li>
+                <li class="media_list_item"><a href="/messanger"><img src="./img/twitch_icon.png" alt="" class="icon_media"></a></li>
+            </ul>
+        </nav>
+        <p class="outpost">
             © 2018 Outpost Games, Inc. All Rights Reserved
-        </span>
-        <div class="strategy">
-            <ul class="strategy_lists">
-                <li class="strategy_list_item">Privacy policy</li>
-                <li class="strategy_list_item">Terms of services</li>
-                <li class="strategy_list_item">Code of conduct</li>
+        </p>
+        <div class="steps">
+            <ul class="step_lists">
+                <li>
+                    Private policy
+                </li>
+                <li>Terms of services</li>
+                <li>Code of conduct</li>
             </ul>
         </div>
     </footer>
 </body>
-
 </html>
