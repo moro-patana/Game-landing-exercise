@@ -298,3 +298,14 @@ body > header > nav ul a {
 .newsletter_subscribe .description {
   padding-inline-start: 200px;
   float: right; }
+
+.step_lists li {
+  color: #ffff;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 34px;
+  text-align: center;
+  letter-spacing: 0.1em;
+  text-transform: uppercase; }
