@@ -1,1 +1,25 @@
 @import "variables";
+
+.system {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    row-gap: 2rem;
+    column-gap: 2rem;
+    padding: 2rem;
+}
+.system_list {
+    display: flex;
+    flex-direction: column;
+}
+.system_list_item {
+    font-family: $bebas-font;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    color: #FFB548;
+
+}
+.system_list:nth-of-type(5) {
+    grid-column: 1 / 3;
+}
