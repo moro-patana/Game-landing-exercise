@@ -299,6 +299,31 @@ body > header > nav ul a {
   padding-inline-start: 200px;
   float: right; }
 
+.page_logo {
+  text-align: center;
+  padding-block-end: 2rem;
+  padding-block-start: 2rem; }
+
+.homepage ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  row-gap: 2rem; }
+
+.homepage li:nth-of-type(4) {
+  grid-column: 1 / 3; }
+
+.homepage li a {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffff; }
+
 .step_lists li {
   color: #ffff;
   font-family: "Open Sans";
@@ -309,3 +334,14 @@ body > header > nav ul a {
   text-align: center;
   letter-spacing: 0.1em;
   text-transform: uppercase; }
+
+.social_media {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  border-bottom: 1px solid white; }
+
+.outpost {
+  padding: 1rem;
+  text-align: center; }
