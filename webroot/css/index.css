@@ -214,13 +214,22 @@ body > header > nav ul a {
   width: 60px;
   padding-top: 1rem; }
 
+.system_requirements {
+  padding: 2rem;
+  background-image: url("../img/bg-image4.png");
+  background-repeat: no-repeat;
+  background-position: 50% calc(100% + 100px);
+  background-size: contain; }
+
+.system_requirements article {
+  padding-block-end: 100px; }
+
 .system {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, 1fr);
   row-gap: 2rem;
-  column-gap: 2rem;
-  padding: 2rem; }
+  column-gap: 2rem; }
 
 .system_list {
   display: flex;
@@ -231,7 +240,8 @@ body > header > nav ul a {
   font-size: 18px;
   line-height: 18px;
   letter-spacing: 2px;
-  color: #FFB548; }
+  color: #FFB548;
+  padding-block-end: 1rem; }
 
 .system_list:nth-of-type(5) {
   grid-column: 1 / 3; }
