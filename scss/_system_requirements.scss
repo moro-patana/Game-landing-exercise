@@ -4,11 +4,11 @@
     padding: 2rem;
     background-image: url("../img/bg-image4.png");
     background-repeat: no-repeat;
-    background-position: 50% calc(100% + 100px);
+    background-position: 50% calc(50% + 200px);
     background-size: contain;
 }
 .system_requirements article {
-    padding-block-end: 100px;
+    padding-block-end: 200px;
 }
 .system {
     display: grid;
