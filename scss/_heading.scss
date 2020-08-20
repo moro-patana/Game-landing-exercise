@@ -1,9 +1,9 @@
 @import "variables";
 
 body > header {
-    // position: absolute;
+    position: absolute;
 }
-body > header .container {
+body > header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
