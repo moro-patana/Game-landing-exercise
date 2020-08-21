@@ -240,10 +240,12 @@ body > header > nav ul a {
   padding-left: 116px;
   background-image: url("../img/features.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: 30% 50%;
+  padding-bottom: 200px; }
 
 .instruction_flows {
-  counter-reset: step; }
+  counter-reset: step;
+  padding-block-end: 2rem; }
 
 .instruction_flows label {
   font-family: "Bebas Neue";
@@ -254,7 +256,8 @@ body > header > nav ul a {
   color: #FFB548; }
 
 .detail {
-  display: none; }
+  display: none;
+  padding-inline-start: 1.5rem; }
 
 input[type="radio"]:checked ~ .detail {
   display: block; }
