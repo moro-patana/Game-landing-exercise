@@ -57,10 +57,6 @@ a {
   line-height: 16px;
   letter-spacing: 2px; }
 
-.heading {
-  display: flex;
-  flex-direction: column-reverse; }
-
 body > header {
   position: absolute; }
 
@@ -244,8 +240,24 @@ body > header > nav ul a {
   padding-left: 116px;
   background-image: url("../img/features.png");
   background-repeat: no-repeat;
-  background-position: 50% calc(100% - 116px);
-  background-size: contain; }
+  background-size: cover; }
+
+.instruction_flows {
+  counter-reset: step; }
+
+.instruction_flows label {
+  font-family: "Bebas Neue";
+  font-size: 21px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 2px;
+  color: #FFB548; }
+
+.detail {
+  display: none; }
+
+input[type="radio"]:checked ~ .detail {
+  display: block; }
 
 .system_requirements {
   padding: 2rem;
