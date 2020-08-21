@@ -4,10 +4,12 @@
     padding-left: 116px;
     background-image: url("../img/features.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 30% 50%;
+    padding-bottom: 200px;
 }
 .instruction_flows {
     counter-reset: step;
+    padding-block-end: 2rem;
 }
 .instruction_flows label {
     font-family: $bebas-font;
@@ -20,6 +22,7 @@
 }
 .detail {
     display: none;
+    padding-inline-start: 1.5rem;
 }
 input[type="radio"]:checked ~ .detail {
     display: block;
