@@ -2,18 +2,7 @@
 
 .newsletter_subscribe {
     background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
-}
-.sculpture {
-    position: absolute;
-    width: 230px;
-    height: 360px;
-    overflow: hidden;
-    padding-right: 200px;
-}
-.newsletter_subscribe .heading {
-    float: right;
-}
-.newsletter_subscribe .description {
-    padding-inline-start: 200px;
-    float: right;
+    background-image: url("../img/mayan-raul-osorio-totem.png");
+    background-repeat: no-repeat;
+    background-size: cover;
 }
