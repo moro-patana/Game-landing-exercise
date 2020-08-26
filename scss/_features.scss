@@ -2,10 +2,10 @@
 
 .features {
     padding-left: 116px;
-    background-image: url("../img/bg-image3.png");
+    background-image: url("../img/bg-image3-medium.png");
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    background-size: 50% auto;
+    background-size: cover;
 }
 .instruction_flows {
     counter-reset: step;
