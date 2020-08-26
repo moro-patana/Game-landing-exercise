@@ -19,7 +19,9 @@
 
 body {
   background-color: black;
-  margin: 0 auto; }
+  margin: 0 auto;
+  width: 100%;
+  height: auto; }
 
 h2 {
   font-family: "Bebas Neue";
@@ -63,7 +65,9 @@ body > header {
 body > header {
   display: flex;
   flex-direction: row;
-  justify-content: space-between; }
+  justify-content: space-between;
+  width: 100%;
+  padding: 2rem; }
 
 body > header nav {
   order: 3;
@@ -152,74 +156,45 @@ h1 > img {
   max-width: 100%;
   display: block; }
 
-.menu li a {
-  text-transform: uppercase;
-  font-size: 12px;
-  color: #ffff; }
+.icon_menu {
+  background-image: url("../img/icon_menu_white.svg");
+  background-repeat: no-repeat;
+  background-size: 40px;
+  width: 40px; }
 
-body > header nav ul {
-  padding: 1rem;
-  background-color: #f8f8f8;
-  position: absolute;
-  z-index: 3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  width: 250px;
-  box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
-  transform: translateX(-110%);
-  transition: transform 0.3s; }
+label > .a11y {
+  display: none; }
 
-body > [type="checkbox"]:checked ~ nav {
-  transform: translateX(0); }
+#menu_checkbox {
+  display: none; }
 
-body > [type="checkbox"]:checked ~ header label {
-  position: absolute;
-  z-index: 2;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background: rgba(0, 0, 0, 0.25); }
+body > [type="checkbox"]:checked ~ .homepage_list {
+  transform: translateX(0);
+  display: block; }
 
-body > [type="checkbox"]:checked ~ main {
-  z-index: 1; }
+.homepage_list {
+  margin-block-start: 1rem;
+  background-color: gray;
+  width: 300px;
+  height: auto;
+  display: none; }
 
-body > header > nav {
-  display: none;
-  position: absolute;
-  top: 1rem;
-  left: 1rem;
-  width: 1rem;
-  height: 1rem; }
+.homepage_list ul {
+  display: block; }
 
-.container > label {
-  width: 1rem;
-  height: 1rem;
-  display: block;
-  background-image: url("../img/icon_menu.svg");
-  background-size: 1rem;
-  background-repeat: no-repeat; }
+.homepage_list li {
+  padding: 2rem; }
 
-body > nav > ul {
-  list-style: none;
-  display: flex;
-  flex-direction: column; }
-
-body > header > nav ul a {
-  text-transform: uppercase;
-  text-decoration: none;
-  color: #343638;
-  opacity: 0.5;
+.homepage_list a {
+  font-family: "Open Sans";
+  font-style: normal;
   font-weight: 700;
-  font-size: 0.75rem;
-  line-height: 1rem;
-  transition: opacity 0.3s;
-  display: block;
-  padding: 1rem 1rem 1rem 4rem;
-  vertical-align: middle; }
+  font-size: 12px;
+  line-height: 16px;
+  text-align: right;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #ffff; }
 
 .post {
   display: flex;
@@ -238,10 +213,10 @@ body > header > nav ul a {
 
 .features {
   padding-left: 116px;
-  background-image: url("../img/bg-image3.png");
+  background-image: url("../img/bg-image3-medium.png");
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 50% auto; }
+  background-size: cover; }
 
 .instruction_flows {
   counter-reset: step;
