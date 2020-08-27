@@ -1,5 +1,8 @@
 @import "variables";
 
+.navigation {
+    border-bottom: 1px solid white;
+}
 .page_logo {
     text-align: center;
     padding-block-end: 2rem;
@@ -37,14 +40,59 @@
     letter-spacing: 0.1em;
     text-transform: $text-transform;
 }
-.social_media {
+.media_list {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     padding: 1rem;
-    border-bottom: 1px solid white;;
 }
 .outpost {
     padding: 1rem;
     text-align: center;
+}
+
+@media(min-width: $content) {
+    .navigation {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .homepage ul {
+        display: flex;
+        flex-direction: row;
+        padding-block-start: 6rem;
+    }
+    .homepage li {
+        padding-left: 1rem;
+       padding-right: 1rem;
+    }
+    .media_list {
+        display: flex;
+        flex-direction: row;
+        justify-content: initial;
+        padding-block-start: 6rem;
+    }
+    .media_list_item {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+    .following_steps {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding-block-start: 2rem;
+    }
+    .steps ul {
+        display: flex;
+        flex-direction: row;
+        }
+    .step_lists li:nth-of-type(1)::after, 
+    .step_lists li:nth-of-type(2)::after {
+       content: "|";
+       padding-left: 1rem;
+       padding-right: 1rem;
+    }
+    .outpost {
+        padding: 0;
+    }
 }
