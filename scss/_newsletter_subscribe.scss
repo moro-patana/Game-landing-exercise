@@ -1,13 +1,15 @@
 @import "variables";
 
 .newsletter_subscribe {
-    background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
-    background-image: url("../img/mayan-raul-osorio-totem.png");
+    background: radial-gradient(20.43% 53.19% at 0% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%),
+                url("../img/mayan_small.png");
     background-repeat: no-repeat;
-    background-size: cover;
+    background-position: 0% 50%;
+    background-size: cover, auto 100%;
 }
-.newsletter_subscribe article {
-    padding-block-end: 200px;
+.newsletter_wrapper {
+    padding-inline-start: 122px;
+    padding-block-start: 2rem;
 }
 .form_input {
     display: flex;
