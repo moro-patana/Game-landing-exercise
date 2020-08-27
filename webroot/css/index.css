@@ -213,7 +213,7 @@ body > [type="checkbox"]:checked ~ .homepage_list {
 
 .features {
   padding-left: 116px;
-  background-image: radial-gradient(61.45% 66.77% at 16.45% 28.62%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/bg-image3-medium.png");
+  background-image: radial-gradient(20.45% 53.19% at 0% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url("../img/bg-image3-medium.png");
   background-repeat: no-repeat;
   background-position: 0% 50%;
   background-size: cover, auto 100%; }
@@ -338,13 +338,14 @@ input[type="radio"]:checked ~ .detail {
   padding-inline-start: 1rem; }
 
 .newsletter_subscribe {
-  background: radial-gradient(45.43% 53.19% at 50% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%);
-  background-image: url("../img/mayan-raul-osorio-totem.png");
+  background: radial-gradient(20.43% 53.19% at 0% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%), url("../img/mayan_small.png");
   background-repeat: no-repeat;
-  background-size: cover; }
+  background-position: 0% 50%;
+  background-size: cover, auto 100%; }
 
-.newsletter_subscribe article {
-  padding-block-end: 200px; }
+.newsletter_wrapper {
+  padding-inline-start: 122px;
+  padding-block-start: 2rem; }
 
 .form_input {
   display: flex;
@@ -369,6 +370,9 @@ input[type="radio"]:checked ~ .detail {
   font-size: 14px;
   line-height: 19px;
   color: #FFB548; }
+
+.navigation {
+  border-bottom: 1px solid white; }
 
 .page_logo {
   text-align: center;
@@ -406,13 +410,48 @@ input[type="radio"]:checked ~ .detail {
   letter-spacing: 0.1em;
   text-transform: uppercase; }
 
-.social_media {
+.media_list {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding: 1rem;
-  border-bottom: 1px solid white; }
+  padding: 1rem; }
 
 .outpost {
   padding: 1rem;
   text-align: center; }
+
+@media (min-width: 1114px) {
+  .navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+  .homepage ul {
+    display: flex;
+    flex-direction: row;
+    padding-block-start: 6rem; }
+  .homepage li {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .media_list {
+    display: flex;
+    flex-direction: row;
+    justify-content: initial;
+    padding-block-start: 6rem; }
+  .media_list_item {
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .following_steps {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-block-start: 2rem; }
+  .steps ul {
+    display: flex;
+    flex-direction: row; }
+  .step_lists li:nth-of-type(1)::after,
+  .step_lists li:nth-of-type(2)::after {
+    content: "|";
+    padding-left: 1rem;
+    padding-right: 1rem; }
+  .outpost {
+    padding: 0; } }
