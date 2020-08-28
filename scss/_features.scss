@@ -28,3 +28,9 @@
 input[type="radio"]:checked ~ .detail {
     display: block;
 }
+@media(min-width: $content) {
+    .features {
+    background-image: url("../img/features.png");
+    background-repeat: no-repeat;
+    }
+}
