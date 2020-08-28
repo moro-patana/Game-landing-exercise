@@ -237,6 +237,11 @@ body > [type="checkbox"]:checked ~ .homepage_list {
 input[type="radio"]:checked ~ .detail {
   display: block; }
 
+@media (min-width: 1114px) {
+  .features {
+    background-image: url("../img/features.png");
+    background-repeat: no-repeat; } }
+
 .system_requirements {
   padding: 2rem;
   background-image: url("../img/bg-image4.png");
