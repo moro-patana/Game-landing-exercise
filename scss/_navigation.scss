@@ -1,31 +1,32 @@
 @import "variables";
 
-.icon_menu {
-  background-image: url("../img/icon_menu_white.svg");
+.icon_menu::before {
+  content: url("../img/icon_menu_white.svg");
   background-repeat: no-repeat;
   background-size: 40px;
   width: 40px;
+  margin-inline-end: -15rem;
+  margin-inline-start: 15rem;
+  margin-block-end: -15rem;
+
 }
 label > .a11y {
   display: none;
 }
-#menu_checkbox {
+[type="checkbox"] {
   display: none;
 }
-// .homepage_list {
-//   display: none;
-// }
-body > [type="checkbox"]:checked ~ .homepage_list {
+[type="checkbox"]:checked ~ .homepage_list {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  width: 200px;
+  z-index: 1;
+  background-color: turquoise;
   transform: translateX(0);
-  display: block;
 }
-.homepage_list {
-  margin-block-start: 1rem;
-  background-color: gray;
-  width: 300px;
-  height: auto;
-  display: none;
-}
+
 .homepage_list ul {
   display: block;
 }
