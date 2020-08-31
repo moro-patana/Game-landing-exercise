@@ -3,21 +3,7 @@
 body > header {
     position: absolute;
 }
-body > header {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    width: 100%;
-    padding: 2rem;
-}
-body > header nav {
-    order: 3;
-    display: inline;
-}
-.languages select {
-    font-size: 12px;
-    text-transform: uppercase;
-}
+
 h1 > img {
     width: 60px;
     height: 60px;
