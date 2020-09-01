@@ -1,25 +1,40 @@
 @import "variables";
 
 .newsletter_subscribe {
-    background: radial-gradient(20.43% 53.19% at 0% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%),
+    background: radial-gradient(20.43% 53.19% at 13% 30%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 46.15%, #080A0B 99.74%),
                 url("../img/mayan_small.png");
     background-repeat: no-repeat;
     background-position: 0% 50%;
     background-size: cover, auto 100%;
 }
 .newsletter_wrapper {
-    padding-inline-start: 122px;
+    padding-inline-start: 140px;
     padding-block-start: 2rem;
+}
+.form_group {
+    margin-inline-start: 1rem;
 }
 .form_input {
     display: flex;
     flex-direction: column;
 }
-.email {
+.form_wrapper {
     width: 293px;
     height: 50px;
     background: rgba(255, 255, 255, 0.08);
-    border-radius: 3px
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    padding-inline-start: 1rem;
+}
+.form_wrapper label {
+    color: $text-color;
+    opacity: 0.5;
+    font-family: $open-sans-font;
+    font-style: $normal-style;
+    font-weight: $normal-size;
+    font-size: 12px;
+    line-height: 16px;
 }
 .subscribe {
     width: 300px;
@@ -27,12 +42,9 @@
     background-color: orange;
     margin-block-start: 1rem;
 }
-.email_address {
-    font-family: $open-sans-font;
-    font-style: $normal-style;
-    font-weight: $normal-size;
-    font-size: 14px;
-    line-height: 19px;
+.email {
+    background-color: transparent;
+    border: none;
     color: #FFB548;
 }
 
