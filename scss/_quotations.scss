@@ -69,3 +69,27 @@
     color: #FFFFFF;
     padding-inline-start: 1rem;
 }
+@media(min-width:$content) {
+    .quotations {
+        margin: 4rem;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .quotations > article {
+        width: 438px;
+        margin-block-start: 200px;
+        margin-block-end: 200px;
+    }
+    .quotations .description {
+        padding-block-start: 2rem;
+        padding-block-end: 2rem;
+    }
+    .testemonial {
+        margin-inline-start: 0;
+        margin-block-start: 2rem;
+    }
+    .testemony:nth-of-type(1),
+    .testemony:nth-of-type(3) {
+        margin-inline-start: 272px;
+    }
+}
