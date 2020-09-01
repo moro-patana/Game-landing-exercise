@@ -8,31 +8,27 @@
 </head>
 <body>
     <header>
-        <input type="checkbox">
-        <h1>
-            <img src="./img/logo-1.png" alt="Logo">
-        </h1>
-        <div class="languages">
-            <select name="language" id="language">
-                <option value="/english">Eng</option>
-                <option value="/russia">Rus</option>
-                <option value="/france">Fra</option>
-                <option value="/deu">Deu</option>
-            </select>
-        </div>
-        <nav class="homepage_list">
-            <ul>
-                <li><a class="a11y" href="/main">Main</a></li>
-                <li><a class="a11y" href="/about">About</a></li>
-                <li><a class="a11y" href="/game">Game features</a></li>
-                <li><a class="a11y" href="/system">System requirements</a></li>
-                <li><a class="a11y" href="/quote">Quotes</a></li>
-            </ul>
-        </nav>
-        <label for="menu_checkbox" class="icon icon_menu">
-            <span class="a11y">Open the menu</span>
-        </label>
-
+        <h1><img class="logo" src="./img/logo.png" alt="Logo"></h1>
+            <select name="languages" id="languages">
+                <option value="english">ENG</option>
+                <option value="russia">Rus</option>
+                <option value="france">Fra</option>
+                <option value="deu">Deu</option>
+        <details>
+            <summary><input type="checkbox" id="menu_checkbox"></summary>
+            <label for="menu_checkbox" class="icon icon_menu">
+                <span class="a11y">Menu</span>
+            </label>
+        </details>
+            <nav class="menu">
+                <ul class="menu_list">
+                    <li class="list_item"><a href="/main">Main</a></li>
+                    <li class="list_item"><a href="/about">About</a></li>
+                    <li class="list_item"><a href="/game">Game features</a></li>
+                    <li class="list_item"><a href="/system">System requirements</a></li>
+                    <li class="list_item"><a href="/quotes">Quotes</a></li>
+                </ul>
+            </nav>
     </header>
     <main>
         <header class="masthead">
@@ -122,7 +118,6 @@
             </article>
         </section>
         <section class="system_requirements">
-            <article>
                 <header class="heading">
                     <p class="category">
                         Can my computer run this game?
@@ -131,40 +126,43 @@
                         System requirements
                     </h2>
                 </header>
-                <div class="system">
-                    <div class="system_list">
-                        <span class="system_list_item">Os:</span>
-                        <span class="required">Windows 7 64-bit only
-                            (No OSX support at this time)
-                        </span>
-                    </div>
-                    <div class="system_list">
-                        <span class="system_list_item">Processor:</span>
-                        <span class="required">
-                            Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8GHZ
-                        </span>
-                    </div>
-                    <div class="system_list">
-                        <span class="system_list_item">Memory:</span>
-                        <span class="required">
-                            8 GB RAM
-                        </span>
-                    </div>
-                    <div class="system_list">
-                        <span class="system_list_item">Storage:</span>
-                        <span class="required">
-                            8 GB available space
-                        </span>
-                    </div>
-                    <div class="system_list">
-                        <span class="system_list_item">Graphics:</span>
-                        <span class="required">
-                            NVIDIA GeForce GTX 660 2GB or 
-                            AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
-                        </span>
-                    </div>
-                </div>
-            </article>
+                <table>
+                <tbody>
+                    <tr>
+                     <td>
+                      <h3>Os:</h3>
+                      <p>Windows 7 64-bit only
+                        (No OSX support at this time)
+                        </p>
+                     </td>
+                        <td>
+                            <h3>Processor:</h3>
+                            <p>
+                                Intel Core 2 Duo @ 2.4 GHZ or AMD Athlon X2 @ 2.8GHZ
+                            </p>
+                           </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <h3>Memory:</h3>
+                            <p>8 GB RAM
+                            </p>
+                           </td>
+                        <td>
+                            <h3>Storage:</h3>
+                            <p>8 GB available space</p>
+                           </td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <h3>Graphics:</h3>
+                            <p>NVIDIA GeForce GTX 660 2GB or 
+                                AMD Radeon HD 7850 2GB DirectX11 (Shader Model 5)
+                            </p>
+                           </td>
+                    </tr>
+                </tbody>
+            </table>
         </section>
         <section class="quotations">
             <article>
@@ -256,7 +254,10 @@
                 </div>
                 <div class="form_group">
                     <form action="" class="form_input">
-                        <input type="text" class="email" placeholder="Your email address">
+                        <div class="form_wrapper">
+                            <label for="email">Your email address</label>
+                            <input type="text" class="email" placeholder="aliciliniavopir@gmail.com">
+                        </div>
                         <button class="subscribe">Subscribe</button>
                     </form>
                 </div>
@@ -270,11 +271,11 @@
             </p>
             <nav class="homepage">
                 <ul>
-                    <li><a class="a11y" href="/main">Main</a></li>
-                    <li><a class="a11y" href="/about">About</a></li>
-                    <li><a class="a11y" href="/game">Game features</a></li>
-                    <li><a class="a11y" href="/system">System requirements</a></li>
-                    <li><a class="a11y" href="/quote">Quotes</a></li>
+                    <li><a class="homepage_list" href="/main">Main</a></li>
+                    <li><a class="homepage_list" href="/about">About</a></li>
+                    <li><a class="homepage_list" href="/game">Game features</a></li>
+                    <li><a class="homepage_list" href="/system">System requirements</a></li>
+                    <li><a class="homepage_list" href="/quote">Quotes</a></li>
                 </ul>
             </nav>
     
@@ -285,7 +286,7 @@
                     <li class="media_list_item"><a href="/youtube"><img src="./img/vector_icon.png" alt="" class="icon_media"></a></li>
                     <li class="media_list_item"><a href="/messanger"><img src="./img/twitch_icon.png" alt="" class="icon_media"></a></li>    
                 </ul>
-            </div>    
+            </div>
         </div>
 
         <div class="following_steps">
@@ -300,7 +301,7 @@
                     <li>Terms of services</li>
                     <li>Code of conduct</li>
                 </ul>
-            </div>    
+            </div>
         </div>
     </footer>
 </body>
