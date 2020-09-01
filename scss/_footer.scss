@@ -2,6 +2,8 @@
 
 .navigation {
     border-bottom: 1px solid white;
+    margin-inline-start: 1rem;
+    margin-inline-end: 1rem;
 }
 .page_logo {
     text-align: center;
@@ -49,6 +51,12 @@
 .outpost {
     padding: 1rem;
     text-align: center;
+}
+.step_lists li:nth-of-type(2)::before,
+.step_lists li:nth-of-type(2)::after {
+    content: "|";
+    padding-left: 1rem;
+    padding-right: 1rem;
 }
 
 @media(min-width: $content) {
