@@ -523,7 +523,8 @@ h3 {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-block-start: 2rem; }
+    padding-block-start: 2rem;
+    margin: 1rem; }
   .steps ul {
     display: flex;
     flex-direction: row; }
