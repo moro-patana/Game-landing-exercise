@@ -60,6 +60,9 @@
 }
 
 @media(min-width: $content) {
+    footer {
+        margin: 4rem;
+    }
     .navigation {
         display: flex;
         flex-direction: row;

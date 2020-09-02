@@ -536,6 +536,8 @@ h3 {
   padding-right: 1rem; }
 
 @media (min-width: 1114px) {
+  footer {
+    margin: 4rem; }
   .navigation {
     display: flex;
     flex-direction: row;
