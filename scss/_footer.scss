@@ -105,6 +105,11 @@
         content: " ";
         padding-left: 0;
     }
+    .step_lists li:nth-of-type(2)::before {
+        content: " ";
+        padding-right: 0;
+    }
+
     .outpost {
         padding: 0;
     }
