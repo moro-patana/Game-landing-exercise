@@ -50,9 +50,16 @@
 
 @media(min-width: $content) {
     .newsletter_subscribe {
-        background-image:  radial-gradient(20.45% 53.19% at 0% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%),
+        background-image:  radial-gradient(57.45% 53.19% at 0% 50%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%),
                           url("../img/mayan-raul-osorio-totem.png");
         background-repeat: no-repeat;
-        padding-inline-start: 675px;
+        background-position: cover, left 0 right 50%;
+        padding-inline-start: 50%;
+        margin: 4rem;
+    }
+    .form_input {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
 }
