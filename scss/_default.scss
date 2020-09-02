@@ -42,3 +42,8 @@ a {
     letter-spacing: 2px;
 
 }
+@media(min-width:$content) {
+    h2 {
+        font-size: 80px;
+    }
+}
