@@ -262,6 +262,11 @@ details {
   display: block;
   border-radius: 6px; }
 
+@media (min-width: 1114px) {
+  .social_battle article {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); } }
+
 .post {
   display: flex;
   flex-direction: row;
