@@ -61,7 +61,20 @@ a {
 
 @media (min-width: 1114px) {
   h2 {
-    font-size: 80px; } }
+    font-size: 80px; }
+  .category {
+    font-family: "Bebas Neue";
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 18px;
+    letter-spacing: 2px;
+    text-transform: uppercase; }
+  .description {
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 16px;
+    letter-spacing: 2px; } }
 
 body > header {
   width: 86%;
