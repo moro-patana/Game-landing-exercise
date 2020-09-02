@@ -409,6 +409,7 @@ h3 {
 
 @media (min-width: 1114px) {
   .quotations {
+    background: radial-gradient(70.52% 37.27% at 24.21% 47.47%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 51.1%, #080A0B 99.74%);
     margin: 4rem;
     display: grid;
     grid-template-columns: repeat(2, 1fr); }
@@ -420,6 +421,8 @@ h3 {
     padding-block-start: 2rem;
     padding-block-end: 2rem; }
   .testemonial {
+    width: 260px;
+    height: 60px;
     margin-inline-start: 0;
     margin-block-start: 2rem; }
   .testemony:nth-of-type(1) {
