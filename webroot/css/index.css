@@ -569,5 +569,8 @@ h3 {
     content: "|";
     padding-left: 1rem;
     padding-right: 1rem; }
+  .step_lists li:nth-of-type(2)::before {
+    content: " ";
+    padding-left: 0; }
   .outpost {
     padding: 0; } }
