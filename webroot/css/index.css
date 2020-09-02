@@ -61,7 +61,8 @@ a {
 
 @media (min-width: 1114px) {
   h2 {
-    font-size: 80px; }
+    font-size: 80px;
+    font-weight: 400; }
   .category {
     font-family: "Bebas Neue";
     font-weight: 400;

@@ -45,6 +45,7 @@ a {
 @media(min-width:$content) {
     h2 {
         font-size: 80px;
+        font-weight: $normal-size;
     }
     .category {
         font-family: $bebas-font;
