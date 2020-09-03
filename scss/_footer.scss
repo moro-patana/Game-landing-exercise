@@ -1,4 +1,7 @@
 @import "variables";
+footer {
+    background-color: black;
+}
 
 .navigation {
     border-bottom: 1px solid white;
@@ -61,7 +64,7 @@
 
 @media(min-width: $content) {
     footer {
-        margin: 4rem;
+        margin: 0;
     }
     .navigation {
         display: flex;
