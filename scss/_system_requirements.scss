@@ -1,11 +1,15 @@
 @import "variables";
 
 .system_requirements {
+    margin: 0;
     padding-inline-start: 2rem;
     padding-block-end: 200px;
-    background-image: radial-gradient(70.45% 90.19% at 45% 63%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%), url(../img/bg-image4.png);
+    background-image: 
+        radial-gradient(70.45% 90.19% at 45% 63%, rgba(255, 255, 255, 0) 0%, rgba(0, 0, 0, 0) 0%, rgba(4, 5, 6, 0.520671) 25.99%, rgba(6, 7, 8, 0.739601) 65.03%, #080A0B 99.74%),
+        url(../img/bg-image4.png);
     background-repeat: no-repeat;
-    background-position: 100% calc(50% + 200px);
+    background-position: 50% 50%,
+    100% calc(50% + 200px);
     background-size: cover;
 }
 h3 {
